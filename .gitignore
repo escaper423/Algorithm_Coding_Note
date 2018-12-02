@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs
+/Implementations/.vs/Implementations/v15
+*.sln
+*.filters
+*.vcxproj
+*.user

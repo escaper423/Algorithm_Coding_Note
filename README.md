@@ -1,2 +1,2 @@
-# Algorithm_Coding_Study
-a practice board for my algorithm study
+# Algorithm_Coding_Note
+a practice board for data structure / algorithm problems

@@ -9,8 +9,8 @@ function helper(nums, targetIdx){
         return true;
     
     for(let i = targetIdx - 1; i >= 0; i--){
-        let canLeach = i + nums[i];
-        if (canLeach >= targetIdx){
+        let canReach = i + nums[i];
+        if (canReach >= targetIdx){
             return helper(nums,i);
         }
     }

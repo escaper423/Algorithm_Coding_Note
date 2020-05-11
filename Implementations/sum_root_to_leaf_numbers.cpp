@@ -17,24 +17,24 @@ struct TreeNode {
 
 int res = 0; 
 
-void dfs(TreeNode* root, string sum, int height) {
+void dfs(TreeNode* root, string sum) {
 	sum += to_string(root->val);
 	if (root->left == nullptr && root->right == nullptr) {
 		res += stoi(sum);
 		return;
 	}
 	if (root->left) {
-		dfs(root->left, sum, height + 1);
+		dfs(root->left, sum);
 	}
 	if (root->right) {
-		dfs(root->right, sum, height + 1);
+		dfs(root->right, sum);
 	}
 }
 
 int sumNumbers(TreeNode* root) {
 	if (root == nullptr)
 		return 0;
-	dfs(root, "", 0);
+	dfs(root, "");
 	return res;
 }
 

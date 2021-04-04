@@ -6,7 +6,7 @@ using namespace std;
 
 //problem URL : https://leetcode.com/problems/strange-printer/
 
-int strangePrinter(string &&s) {
+int strangePrinter(string s) {
 	int n = s.length();
 	if (n == 0)
 		return 0;
@@ -51,6 +51,6 @@ int main() {
 
 	string str;
 	cin >> str;
-	cout << strangePrinter(std::move(std::forward<string>(str)));
+	cout << strangePrinter(str);
 	return 0;
 }

@@ -3,7 +3,7 @@ problem URL: https://leetcode.com/problems/combination-sum-iii/
 class Solution {
 public:
     vector<vector<int>> res;
-    unordered_set<vector<int>> s;
+    set<vector<int>> s;
     void helper(int k,int picked, int n, int sum, vector<int> &tmp, vector<int> &numUsed){
         if (picked > k){
             return;

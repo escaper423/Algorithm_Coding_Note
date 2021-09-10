@@ -16,12 +16,14 @@ long long initTree(vector<T> v, vector<long long> &seg_tree, int start, int end,
 	return seg_tree[cur];
 }
 
+//start, end: current segtree range
+//left, right: query range
 template <class T>
 long long getSum(const vector<T> &seg_tree, int start, int end, int left, int right, int cur)
 {
 	if (left > end || right < start)
 		return 0;
-	else if (left <= start && right >= end)
+	else if (left <= start && end <= right)
 		return seg_tree[cur];
 	else
 	{
